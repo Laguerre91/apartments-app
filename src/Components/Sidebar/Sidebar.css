@@ -4,15 +4,22 @@
     flex-direction: column;
     align-items: center;
     padding-top: 80px;
-    background-color: rgb(185, 182, 182);
-    width: 15%;
+    background-color: rgb(35, 33, 33);
+    width: 13%;
     height: 500px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .sideBar a {
+    text-align: center;
+    padding: 10px;
+    width: 40%;
     text-decoration: none;
-    color: black;
+    color: rgb(121, 119, 119);
     font-size: 1.1em;
     margin-bottom: 15px;
+}
+
+.sideBar a:hover {
+    color: rgb(255, 255, 255);
 }
