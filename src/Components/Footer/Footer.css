@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(46, 61, 108);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.footer-github p {
+    margin-left: 10px;
+}
+
+.footer-github img {
+    margin-right: 15px;
+    width: 30px;
+}
+
+.footer-github a {
+    text-decoration: none;
+    color: white;
+}
