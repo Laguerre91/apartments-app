@@ -1,6 +1,7 @@
 import NavBar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import SideBar from "../Sidebar/Sidebar";
+import HousesList from "../HousesList/HousesList";
 
 const Homepage = () => {
 
@@ -9,6 +10,7 @@ const Homepage = () => {
         <div className="Homepage">
             <NavBar />
             <SideBar />
+            <HousesList />
             <Footer />
         </div>
     )
