@@ -6,11 +6,11 @@ const Homepage = () => {
 
 
     return (
-        <>
+        <div className="Homepage">
             <NavBar />
             <SideBar />
             <Footer />
-        </>
+        </div>
     )
 
 }

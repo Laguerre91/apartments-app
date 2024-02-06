@@ -1,23 +1,24 @@
-h1 {
+.Navbar h1 {
     font-family: 'Calligraffitti', cursive;
-    text-shadow: 2px 2px 7px black;
+    text-shadow: 1px 1px 5px black;
     ;
-    font-size: 1.8em;
+    font-size: 1.6em;
+    letter-spacing: 2px;
 }
 
-.nav-bar {
+.Navbar {
     display: flex;
     justify-content: space-between;
     background-color: rgb(46, 61, 108);
-    padding: 10px;
-    color: white;
+    padding: 5px;
+    color: rgb(210, 205, 205);
     font-weight: 100;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     padding-left: 30px;
     padding-right: 30px;
 }
 
-.nav-bar img {
+.Navbar img {
     width: 80px;
     height: 80px;
 }

@@ -1,5 +1,5 @@
 import './Footer.css'
-import githubLogo from './../../assets/logo-github.png'
+import githubLogo from './../../assets/img/logo-github.png'
 
 
 const Footer = () => {

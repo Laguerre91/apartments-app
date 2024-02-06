@@ -4,7 +4,7 @@ const SideBar = () => {
 
 
     return (
-        <aside className='sideBar'>
+        <aside className='SideBar'>
             <a href="#">Home</a>
             <a href="#">About</a>
         </aside>
@@ -12,4 +12,4 @@ const SideBar = () => {
 
 }
 
-export default SideBar
+export default SideBar 
