@@ -7,26 +7,25 @@ import './HousesList.css'
 
 const HousesList = () => {
 
-    const [houses, setHouses] = useState(housesData)
+    const [houses, setHouses] = useState(housesData.results)
 
     const deleteHouse = houseIdToDelete => {
 
-        const filteredHouses = houses.results.filter(elm => {
+        const filteredHouses = houses.filter(elm => {
 
             return elm.id !== houseIdToDelete
         })
 
-        setHouses({ results: filteredHouses })
+        setHouses(filteredHouses)
 
     }
-
 
     return (
 
         <article className='HousesList' >
 
             {
-                houses.results.map(house => {
+                houses.map(house => {
 
                     return <HouseCard key={house.id} houseInfo={house} deleteHouse={deleteHouse} />
 
@@ -34,10 +33,7 @@ const HousesList = () => {
             }
 
         </article>
-
-
     )
-
 }
 
 export default HousesList

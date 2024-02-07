@@ -7,18 +7,19 @@
 }
 
 .Navbar {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     background-color: rgb(46, 61, 108);
-    padding: 5px;
     color: rgb(210, 205, 205);
     font-weight: 100;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     padding-left: 30px;
-    padding-right: 30px;
+    width: 100vw;
 }
 
 .Navbar img {
     width: 80px;
     height: 80px;
+    margin-right: 50px;
 }
