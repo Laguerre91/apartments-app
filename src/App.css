@@ -11,3 +11,13 @@ img {
 a {
     text-decoration: none;
 }
+
+::-webkit-scrollbar {
+    width: 13px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgb(211, 209, 209)
+}

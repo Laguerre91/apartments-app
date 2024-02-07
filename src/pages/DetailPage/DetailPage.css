@@ -1,0 +1,18 @@
+.ItemDetails {
+    display: flex;
+    margin-left: 200px;
+    margin-top: 100px;
+    position: absolute;
+}
+
+.ItemDetails .titles-container {
+    width: 50%;
+}
+
+.ItemDetails .image-container {
+    width: 50%;
+}
+
+.ItemDetails .description {
+    text-align: justify;
+}

@@ -1,8 +1,8 @@
 .Navbar h1 {
-    font-family: 'Calligraffitti', cursive;
+    font-family: 'Tangerine', cursive;
     text-shadow: 1px 1px 3px black;
     ;
-    font-size: 1.6em;
+    font-size: 2em;
     letter-spacing: 2px;
 }
 
@@ -11,15 +11,16 @@
     display: flex;
     justify-content: space-between;
     background-color: rgb(46, 61, 108);
-    color: rgb(210, 205, 205);
-    font-weight: 100;
+    color: rgb(236, 230, 230);
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     padding-left: 30px;
     width: 100vw;
+    height: 80px;
 }
 
 .Navbar img {
     width: 80px;
     height: 80px;
-    margin-right: 50px;
+    margin-right: 70px;
+
 }
