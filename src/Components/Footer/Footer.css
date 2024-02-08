@@ -1,6 +1,6 @@
 .footer {
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     background-color: rgb(46, 61, 108);
     color: white;
@@ -14,7 +14,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5px;
 }
 
 .footer-github p {

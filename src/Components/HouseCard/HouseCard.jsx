@@ -1,25 +1,37 @@
+import { Link } from 'react-router-dom'
 import './HouseCard.css'
 
 
 const HouseCard = props => {
 
-
     const house = props.houseInfo
     const deleteHouse = props.deleteHouse
+
+    const greatDeal = 60
+    const premium = 100
 
     return (
 
         <article className='HouseCard' >
-            <img src={house.picture_url.url} alt="house picture" />
-
-
-
-            <h2>{house.name}</h2>
-            <p> {house.city} </p>
-            <p> {house.country} </p>
-            <p> {house.price} </p>
-
-            <button className='btn-delete' onClick={() => deleteHouse(house.id)}>Delete</button>
+            <figure className='image-container'>
+                <img src={house.picture_url.url} alt={house.name} />
+            </figure>
+            <div className='info'>
+                <h2>{house.name}</h2>
+                {house.price <= greatDeal && (
+                    <p className='greatDeal conditional'>Great Deal!</p>
+                )}
+                {house.price >= premium && (
+                    <p className='premium conditional'>Premium</p>
+                )}
+                <p> {house.city} - {house.country} </p>
+                <p> {house.price}€/noche | {house.bedrooms} habitaciones</p>
+                <p>{house.neighbourhood}</p>
+                <div className='buttons-container'>
+                    <Link to={`/detail-info/${house.id}`}>Ver detalles</Link>
+                    <button className='btn-delete' onClick={() => deleteHouse(house.id)}>❌ </button>
+                </div>
+            </div>
 
         </article>
 
