@@ -1,6 +1,3 @@
-import NavBar from "./../../Components/Navbar/Navbar";
-import Footer from "./../../Components/Footer/Footer";
-import SideBar from "./../../Components/Sidebar/Sidebar";
 import HousesList from "./../../Components/HousesList/HousesList";
 import './Homepage.css'
 

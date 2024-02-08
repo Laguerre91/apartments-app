@@ -11,6 +11,8 @@ const Detailpage = () => {
         return elm.id === house_id
     })
 
+    if (!foundHouse) return <Navigate to="error" />
+
     return (
 
         <div className="ItemDetails">

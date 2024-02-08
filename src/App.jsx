@@ -18,13 +18,15 @@ function App() {
       <NavBar></NavBar>
       <SideBar />
       <Footer></Footer>
-      <Routes>
-        <Route path='/' element={<Homepage />} />
-        <Route path='/detail-info/:house_id' element={<DetailPage />} />
-        <Route path='/about' element={<AboutPage />} />
+      <main>
+        <Routes>
+          <Route path='/' element={<Homepage />} />
+          <Route path='/detail-info/:house_id' element={<DetailPage />} />
+          <Route path='/about' element={<AboutPage />} />
 
-        <Route path='*' element={<NotFoundPage />} />
-      </Routes>
+          <Route path='*' element={<NotFoundPage />} />
+        </Routes>
+      </main>
     </>
   )
 }
