@@ -6,6 +6,7 @@ const HouseCard = props => {
 
     const house = props.houseInfo
     const deleteHouse = props.deleteHouse
+    const editHouse = props.editHouse
 
     const greatDeal = 60
     const premium = 100
@@ -17,7 +18,9 @@ const HouseCard = props => {
                 <img src={house.picture_url.url} alt={house.name} />
             </figure>
             <div className='info'>
-                <h2>{house.name}</h2>
+                <Link to={`/detail-info/${house.id}`}>
+                    <h2>{house.name}</h2>
+                </Link>
                 {house.price <= greatDeal && (
                     <p className='greatDeal conditional'>Great Deal!</p>
                 )}
@@ -28,13 +31,11 @@ const HouseCard = props => {
                 <p> {house.price}€/noche | {house.bedrooms} habitaciones</p>
                 <p>{house.neighbourhood}</p>
                 <div className='buttons-container'>
-                    <Link to={`/detail-info/${house.id}`}>Ver detalles</Link>
                     <button className='btn-delete' onClick={() => deleteHouse(house.id)}>❌ </button>
                 </div>
             </div>
 
         </article>
-
     )
 }
 

@@ -7,3 +7,14 @@
     margin-top: 100px;
 
 }
+
+.HousesList .apart-form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid black;
+    margin-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 10px;
+}

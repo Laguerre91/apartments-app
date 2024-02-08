@@ -1,0 +1,29 @@
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+
+label input {
+    width: 100%;
+}
+
+input {
+    margin-left: 5px;
+}
+
+form label {
+    margin: 5px;
+}
+
+input[type='submit'] {
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(31, 211, 31);
+    padding: 10px;
+    margin-left: 50px;
+    margin-top: 15px;
+    width: 20%;
+}
