@@ -12,6 +12,8 @@ const HouseCard = props => {
         <article className='HouseCard' >
             <img src={house.picture_url.url} alt="house picture" />
 
+
+
             <h2>{house.name}</h2>
             <p> {house.city} </p>
             <p> {house.country} </p>
