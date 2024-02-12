@@ -13,7 +13,7 @@ const HouseCard = props => {
 
     return (
 
-        <article className='HouseCard' >
+        <article className='HouseCard' key={house.id} >
             <figure className='image-container'>
                 <img src={house.picture_url.url} alt={house.name} />
             </figure>
@@ -30,8 +30,10 @@ const HouseCard = props => {
                 <p> {house.city} - {house.country} </p>
                 <p> {house.price}€/noche | {house.bedrooms} habitaciones</p>
                 <p>{house.neighbourhood}</p>
+
                 <div className='buttons-container'>
                     <button className='btn-delete' onClick={() => deleteHouse(house.id)}>❌ </button>
+                    <button className='btn-edit' onClick={() => editHouse(house.id)}>Edit </button>
                 </div>
             </div>
 

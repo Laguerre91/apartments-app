@@ -47,40 +47,31 @@ const Form = ({ addNewApartments }) => {
             <h2>Add an Apartment</h2>
 
             <form onSubmit={handleFormSubmit}>
-                <label >
-                    Name:
-                    <input type="text" value={name} onChange={handleNameChange} />
-                </label>
+                <label htmlFor='name'>Name:</label>
+                <input type="text" id='name' value={name} onChange={handleNameChange} />
 
-                <label >
-                    Image:
-                    <input type="text" value={image} onChange={handleImageChange} />
-                </label>
+                <label htmlFor='image'>Image:</label>
+                <input type="text" id='image' value={image} onChange={handleImageChange} />
 
-                <label >
-                    Price:
-                    <input type="number" value={price} onChange={handlePriceChange} />
-                </label>
 
-                <label >
-                    Country:
-                    <input type="text" value={country} onChange={handleCountryChange} />
-                </label>
+                <label htmlFor='price'>Price:</label>
+                <input type="number" id='price' value={price} onChange={handlePriceChange} />
 
-                <label >
-                    City:
-                    <input type="text" value={city} onChange={handleCityChange} />
-                </label>
 
-                <label >
-                    Bedrooms:
-                    <input type="number" value={bedrooms} onChange={handleBedroomsChange} />
-                </label>
+                <label htmlFor='country'>Country: </label>
+                <input type="text" id='country' value={country} onChange={handleCountryChange} />
 
-                <label >
-                    Neighbourhood:
-                    <input type="text" value={neighbourhood} onChange={handleNeighbourhoodChange} />
-                </label>
+
+                <label htmlFor='city'>City:</label>
+                <input type="text" id='city' value={city} onChange={handleCityChange} />
+
+
+                <label htmlFor='bedrooms'>Bedrooms:</label>
+                <input type="number" id='bedrooms' value={bedrooms} onChange={handleBedroomsChange} />
+
+
+                <label htmlFor='neighbourhood'>Neighbourhood:</label>
+                <input type="text" id='neighbourhood' value={neighbourhood} onChange={handleNeighbourhoodChange} />
 
                 <input type="submit" value="Add Apartment" />
 

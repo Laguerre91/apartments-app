@@ -10,11 +10,18 @@
 
 .HousesList .apart-form {
     margin: 0 auto;
-    width: 70%;
+    width: 50%;
     text-align: center;
     padding: 15px;
-    border: 1px solid black;
     margin-bottom: 40px;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-radius: 10px;
+}
+
+.HousesList .edit-form {
+    width: 50%;
+}
+
+.HousesList .form-container {
+    display: flex;
 }
